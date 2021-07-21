@@ -1,0 +1,80 @@
+:root {
+  --fg: rgb(225, 225, 225);
+  --bg: #000;
+}
+
+@font-face {
+  font-family: "Authentic Sans";
+  src: url("fonts/AUTHENTICSans-90.woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 18px "Authentic Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  color: var(--bg);
+  background-color: var(--fg);
+  text-decoration: none;
+  padding: 2px;
+}
+
+.logo h1 {
+  font-size: 20px;
+}
+
+.logo h2 {
+  font-size: 13px;
+}
+
+.logo a {
+  color: var(--fg);
+  background-color: transparent;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-items a {
+  margin: 0px 10px;
+}
+
+section {
+  height: 100vh;
+  padding-top: 200px;
+  line-height: 1.5;
+}
+
+#canvas {
+  width: 960px;
+  height: 600px;
+  background-color: #333;
+  margin: 100px auto;
+}
