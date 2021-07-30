@@ -1,6 +1,7 @@
 :root {
   --fg: rgb(225, 225, 225);
   --bg: #000;
+  --nav-height: 80px;
 }
 
 @font-face {
@@ -20,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  /* display: flex; */
 }
 
 h1, h2, h3 {
@@ -54,12 +56,14 @@ a {
 
 nav {
   position: fixed;
+  top: 0;
   display: flex;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
+  height: var(--nav-height);
 }
 
 .nav-items a {
@@ -67,14 +71,13 @@ nav {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 200px;
+  padding-top: var(--nav-height);
   line-height: 1.5;
 }
 
-#canvas {
-  width: 960px;
-  height: 600px;
-  background-color: #333;
-  margin: 100px auto;
+#unity-canvas {
+  margin: auto;
+  display: block;
 }

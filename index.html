@@ -20,9 +20,24 @@
     </nav>
 
     <section id="game">
-      <div class="content">
-        <div id="canvas"></div>
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-mobile-warning">
+          <!-- WebGL builds are not supported on mobile devices. -->
+        </div>
+        <div id="unity-footer">
+          <div id="unity-fullscreen-button"></div>
+        </div>
       </div>
+      <!-- <div class="content"> -->
+      <!--   <div id="canvas"></div> -->
+      <!-- </div> -->
     </section>
 
     <section id="about">
@@ -70,7 +85,7 @@
       </div>
     </section>
 
-    <script src="https://www.hotknife.co.uk/Glut/Build/WebBuild.loader.js"></script>
+    <script src="Build/Build.loader.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
