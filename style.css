@@ -16,6 +16,7 @@
 html {
   font: 18px "Authentic Sans", sans-serif;
   background-color: var(--bg);
+  background-image: url('bg1.gif');
   color: var(--fg);
   scroll-behavior: smooth;
 }
