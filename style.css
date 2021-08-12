@@ -56,6 +56,13 @@ a {
   text-decoration: none;
 }
 
+.logo a span.animate {
+  animation-name: color-loop;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 .content {
   max-width: 800px;
   margin: auto;
@@ -87,4 +94,14 @@ section {
 #unity-canvas {
   margin: auto;
   display: block;
+}
+
+@keyframes color-loop {
+  from {
+    color: #fff;
+  }
+
+  to {
+    color: #333;
+  }
 }

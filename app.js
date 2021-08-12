@@ -40,3 +40,50 @@ createUnityInstance(canvas, config, (progress) => {
   .catch((message) => {
     alert(message);
   });
+
+const titleElement = document.querySelector("h1 a");
+
+titleElement.innerHTML = titleElement.textContent
+  .split("")
+  .map((c) => `<span>${c}</span>`)
+  .join("");
+
+let isAnimating = false;
+
+function startAnimation() {
+  isAnimating = true;
+  const items = Array.from(document.querySelectorAll(".logo a span"));
+  items.forEach((i) => {
+    i.classList.add("animate");
+    i.style.animationDuration = `${Math.random() + 0.5}s`;
+  });
+
+  setTimeout(stopAnimation, 3000);
+}
+
+function stopAnimation() {
+  isAnimating = false;
+
+  const items = Array.from(document.querySelectorAll(".logo a span"));
+  items.forEach((i) => {
+    i.classList.remove("animate");
+  });
+
+  setTimeout(startAnimation, Math.random() * 6000 + 3000);
+}
+
+startAnimation();
+
+// let scrollTimeout;
+//
+// document.addEventListener("scroll", () => {
+//   console.log('scroll');
+//   clearTimeout(scrollTimeout);
+//
+//   if (!isAnimating) startAnimation();
+//
+//   scrollTimeout = setTimeout(() => {
+//     stopAnimation();
+//   }, 1000);
+//
+// });
