@@ -153,6 +153,23 @@ video {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+#text p, #text h3 {
+  font-size: 0.9em;
+}
+
+#text h3 {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+#text p {
+  margin: 5px 0px;
+}
+
+.emph {
+  font-style: italic;
+}
+
 @keyframes download {
   from {
     transform: rotate(-3deg);
