@@ -153,7 +153,8 @@ video {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-#text p, #text h3 {
+#text p,
+#text h3 {
   font-size: 0.9em;
 }
 
@@ -168,6 +169,28 @@ video {
 
 .emph {
   font-style: italic;
+}
+
+.vid {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes download {
