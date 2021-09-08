@@ -133,15 +133,15 @@ video {
 }
 
 .download a {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #000;
+  background-color: rgba(80, 80, 80, 0.7);
+  color: #fff;
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
   width: 350px;
   margin: 30px;
   display: block;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 5px;
   animation-name: download;
   animation-duration: 3000ms;
@@ -150,7 +150,19 @@ video {
 }
 
 .download a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.mute {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000;
+  color: #fff;
+  font: 18px "Authentic Sans", sans-serif;
+  border: 1px solid #fff;
+  padding: 10px;
+  z-index: 999;
 }
 
 #text p,

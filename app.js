@@ -74,6 +74,22 @@ function stopAnimation() {
 
 startAnimation();
 
+const vid = document.querySelector("video");
+const muteButton = document.querySelector(".mute");
+let muted = true;
+
+muteButton.addEventListener("click", () => {
+  console.log("click");
+  if (muted) {
+    muteButton.textContent = "Mute";
+    vid.muted = false;
+  } else {
+    muteButton.textContent = "Unmute";
+    vid.muted = true;
+  }
+  muted = !muted;
+});
+
 // let scrollTimeout;
 //
 // document.addEventListener("scroll", () => {
